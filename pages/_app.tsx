@@ -1,7 +1,8 @@
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
-import { RecoilRoot } from "recoil";
+import React from "react";
 
+import { composeWithDevTools } from "redux-devtools-extension";
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
@@ -9,5 +10,3 @@ function MyApp({ Component, pageProps }: AppProps) {
     </>
   );
 }
-
-export default MyApp;

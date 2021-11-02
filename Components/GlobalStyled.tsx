@@ -42,33 +42,39 @@ export const HomeArea = styled.div`
 
 export const StateWrapper = styled.div`
   width: 400px;
-  height: 400px;
+  height: 500px;
   ${verticalCenterStyle};
 `;
 
 export const StateTitle = styled.div`
+  margin-bottom: 30px;
   width: 300px;
   height: 30px;
   ${CenterCenterStyle};
+  font-size: 2rem;
+  font-weight: 500;
 `;
 
 export const StateSubTitle = styled.div`
   width: 300px;
   height: 30px;
   ${CenterCenterStyle};
+  font-size: 1.1rem;
 `;
 
 export const StateDetail = styled.div`
   width: 250px;
   height: 70px;
   ${CenterCenterStyle};
+  text-align: center;
 `;
 
 export const CounterWrapper = styled.div`
   ${horizontalCenterStyle}
-  width: 100px;
+  width: 200px;
   height: 60px;
 `;
+
 export const CurrentValue = styled.p`
   font-size: 2rem;
   color: black;
@@ -85,5 +91,5 @@ export const MinusIcon = styled(AiOutlineMinus)`
 `;
 
 export const CounterLoader = styled(Loader)<LoaderType>`
-  display: ${({ loading }: any) => (loading === "loading" ? "flex" : "none")};
+  display: ${({ loading }: any) => (loading === true ? "flex" : "none")};
 `;
